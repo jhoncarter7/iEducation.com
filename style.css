@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    background-image: url('./img/bg.proj3.png');
+    height: 400px;
+   width: content;
+
+}
+
+
+.nav-list {
+flex-direction: column;
+width: 400px;
+display: inline;
+
+}
+.logo{
+    width: 160px;
+    display: inline-block;
+   padding: 23px 62px;
+   
+   
+   
+}
+.l-nav {
+ display: inline-block;
+ 
+ padding: 33px 22px;
+ font-size: 1.4rem;
+ position: absolute;
+
+}
+.l-nav ul{
+display: flex;
+
+}
+.l-nav ul li{
+    margin: 0px 23px;
+    list-style-type: none;
+  }
+.l-nav ul li a{
+    color: white;
+    text-decoration: none;
+  }
+.search{
+ right: 15px;
+  position: absolute;
+  margin: 38px;
+}
+.search input{
+  padding: 3px;
+}
+.search button{
+   border: 2px solid black;
+   padding: 2px 20px;
+   font-size: 15px;
+   border-radius: 15px;
+
+}
