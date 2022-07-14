@@ -1,62 +1,191 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+
 }
-#navbar{
-    display: flex;
-    background-image: url('./img/bg.proj3.png');
-    height: 400px;
-   width: content;
+#navbar::before{
+  content: "";
+  background-image: url('./img/bg.proj3.png');
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+
+#navbar {
+  /* position: fixed; */
+  
+
+}
+/* #nav-list{
+  position: fixed;
+  background-color: rgb(111, 111, 235);
+  color: black;
+} */
+
+.logo {
+  /* width: 160px; */
+  display: inline-block;
+  padding: 23px 62px;
+
+
 
 }
 
-
-.nav-list {
-flex-direction: column;
-width: 400px;
-display: inline;
-
-}
-.logo{
-    width: 160px;
-    display: inline-block;
-   padding: 23px 62px;
-   
-   
-   
-}
 .l-nav {
- display: inline-block;
- 
- padding: 33px 22px;
- font-size: 1.4rem;
- position: absolute;
+  display: inline-block;
 
-}
-.l-nav ul{
-display: flex;
-
-}
-.l-nav ul li{
-    margin: 0px 23px;
-    list-style-type: none;
-  }
-.l-nav ul li a{
-    color: white;
-    text-decoration: none;
-  }
-.search{
- right: 15px;
+  padding: 33px 22px;
+  font-size: 1.4rem;
   position: absolute;
-  margin: 38px;
+
 }
-.search input{
+
+.l-nav ul {
+  display: flex;
+
+}
+
+.l-nav ul li {
+  margin: 0px 23px;
+  list-style-type: none;
+}
+
+.l-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.search {
+  right: 59px;
+  position: absolute;
+  top: 36px;
+}
+
+.search input {
   padding: 3px;
 }
-.search button{
-   border: 2px solid black;
-   padding: 2px 20px;
-   font-size: 15px;
-   border-radius: 15px;
+
+.search button {
+  border: 2px solid black;
+  padding: 2px 20px;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
 
 }
+
+#thoughts {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+
+}
+#thoughts div h2{
+  margin-top: 3em;
+}
+
+#thoughts img {
+
+  border: 2px solid black;
+
+  width: 70%;
+}
+
+#program1::before {
+  background-color: rgb(189, 24, 98);
+  /* width: 100%;
+ height: 100%; */
+}
+
+#program1 {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  flex-direction: row-reverse;
+  margin-top: 40em;
+}
+
+.video {
+  margin-top: 33px;
+  margin-right: 190px;
+  margin-left: 90px;
+}
+
+.video h1 {
+  margin-bottom: 31px;
+  font-size: 2.5rem;
+}
+
+.video p {
+  font-size: 1.3rem;
+}
+
+#program2 {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  margin-top: 65em;
+}
+
+.teacher {
+  margin-top: 33px;
+  margin-right: 190px;
+  margin-left: 90px;
+}
+
+.teacher h1 {
+  margin-bottom: 31px;
+  font-size: 2.5rem;
+}
+
+.teacher p {
+  font-size: 1.3rem;
+}
+
+#contact{
+  position: absolute;
+  /* bottom: 10px; */
+ top: 240%;
+ margin-left: 24em;
+}
+.contact-us{
+
+
+}
+
+#contact div{
+  margin: 12px;
+}
+#contact div label{
+  display: block;
+}
+#contact div input{
+ width: 40em;
+ height: 2em;
+}
+#contact div input[type=text]{
+ 
+ height: 10em;
+}
+
+#contact button{
+  border: 2px solid black;
+  padding: 2px 20px;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+    padding: 9px 16em;
+    background-color: bisque;
+ }
