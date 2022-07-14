@@ -4,31 +4,18 @@
   scroll-behavior: smooth;
 
 }
-#navbar::before{
+
+#navbar::before {
   content: "";
   background-image: url('./img/bg.proj3.png');
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
-
-
-
-#navbar {
-  /* position: fixed; */
-  
-
-}
-/* #nav-list{
-  position: fixed;
-  background-color: rgb(111, 111, 235);
-  color: black;
-} */
 
 .logo {
   /* width: 160px; */
@@ -50,6 +37,7 @@
 
 .l-nav ul {
   display: flex;
+
 
 }
 
@@ -92,7 +80,8 @@
 
 
 }
-#thoughts div h2{
+
+#thoughts div h2 {
   margin-top: 3em;
 }
 
@@ -154,38 +143,48 @@
   font-size: 1.3rem;
 }
 
-#contact{
+#contact {
   position: absolute;
   /* bottom: 10px; */
- top: 240%;
- margin-left: 24em;
-}
-.contact-us{
-
-
+  top: 240%;
+  margin-left: 24em;
 }
 
-#contact div{
+.contact-us {}
+
+#contact div {
   margin: 12px;
 }
-#contact div label{
+
+#contact div label {
   display: block;
 }
-#contact div input{
- width: 40em;
- height: 2em;
-}
-#contact div input[type=text]{
- 
- height: 10em;
+
+#contact div input {
+  width: 40em;
+  height: 2em;
 }
 
-#contact button{
+#contact div input[type=text] {
+
+  height: 10em;
+}
+
+#contact button {
   border: 2px solid black;
   padding: 2px 20px;
   font-size: 15px;
   border-radius: 15px;
   cursor: pointer;
-    padding: 9px 16em;
-    background-color: bisque;
- }
+  padding: 9px 16em;
+  background-color: bisque;
+}
+
+.center {
+  position: absolute;
+  top: 310%;
+  background-color: black;
+  border-radius: 9px;
+  color: white;
+  padding: 2em 30.5em;
+}
